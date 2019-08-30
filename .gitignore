@@ -1,0 +1,23 @@
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lockfiles
+package-lock.json
+yarn.lock
+
+# Dependency directories
+node_modules/
+
+# Distribution directory
+dist/
+
+# npm cache directory
+.npm/
+
+# yarn integrity file
+.yarn-integrity
+
+# parcel-bundler cache directory
+.cache/

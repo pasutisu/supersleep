@@ -1,0 +1,20 @@
+{
+  "name": "supersleep",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "types/index.d.ts",
+  "repository": "",
+  "author": "pasutisu <pasuteisu@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run bundle && npm run minify && npm run size",
+    "bundle": "npx rollup $npm_package_module --file dist/supersleep.js --format esm --sourcemap",
+    "minify": "npx terser dist/supersleep.js --output dist/supersleep.min.js --compress --mangle --module --source-map",
+    "size": "gzip -c dist/supersleep.min.js | wc -c"
+  },
+  "devDependencies": {
+    "rollup": "^1.20.2",
+    "terser": "^4.2.1"
+  }
+}
